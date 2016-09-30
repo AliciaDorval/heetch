@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+nav{
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes bando1 {
+  0%{background-color: yellow}
+  25%{background-color: red}
+  50%{background-color: blue}
+  100%{background-color: white}
+}
+
+@keyframes monboutonquibouge {
+0%{  padding:20px 50px 20px 50px;}
+50%{  padding:20px 100px 20px 100px;}
+}
+
+@keyframes boutonquimarche {
+  0%{margin-left: 100%}
+  100%{margin-right: 100%}
+}
+
+#logo {
+  width: 120px;
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  background-attachment: scroll;
+  background-clip: border-box;
+  transition-timing-function: linear, linear;
+
+
+}
+
+
+
+#menu li{
+  margin-right: 10px;
+  text-transform: capitalize;
+
+}
+
+header{
+  background-color: #2E006C;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: bando1 1s infinite;
+}
+
+.titre {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+  color: #EC407A;
+}
+
+#video {
+  padding:20px 50px 20px 50px;
+   border-radius:50px 50px 50px 50px;
+   font: 20px Verdana;
+   color: white;
+   border-style: solid;
+   border-color: #EC407A;
+   background-color: #2E006C;
+  animation: monboutonquibouge 3s infinite;
+   /*animation: boutonquimarche 1s infinite;*/
+}
+
+#video:hover{
+ transition-delay: 0.2s;
+ background-color: #EC407A;
+ color: #2E006C;
+ }
+
+ .truc {
+   display: flex;
+  justify-content: center;
+ }
+
+h1 {
+  color:  #EC407A;
+  text-align: center;
+}
+
+.politic-title{
+  color: #EC407A;
+  text-align: center;
+}
+
+.politicien{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.politicien ul{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+.politicien ul li{
+  margin: 15px;
+}
+.photo {
+  border-radius:100%;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  box-shadow: inset 0 0 0 0 rgba(245,86,104, 0.4), inset 0 0 0 12px rgba(29,23,66,0.4), 0 0px 0px rgba(0,0,0,0);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition-duration: 0.7s;
+}
+
+span {
+  display: none;
+}
+
+.photo:hover span {
+  display: inline;
+}
+#ytb{
+  width: 100%;
+  height: 400px;
+}
+
+.politicien .photo:hover {
+  transition-duration: 0.7s;
+  /*-moz-box-shadow:orange;
+  background-color: orange;*/
+  color: white;
+  text-align: center;
+  box-shadow: inset 0 0 0 150px rgba(245,86,104, 0.6), inset 0 0 0 16px rgba(245,86,104,0.4), 0 1px 2px rgba(0,0,0,1);
+
+}
+
+p {
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  font-size: 20px;
+  color: grey;
+}
+
+h4 {
+  text-align: center;
+  color: #2E006C;
+}
+
+#btn-fcb {
+  margin-top: 50px;
+}
+
+#savoir {
+  padding:20px 50px 20px 50px;
+   border-radius:50px 50px 50px 50px;
+   font: 20px Verdana;
+   color: orange;
+   border-style: solid;
+   border-color: #EC407A;
+   background-color: white;
+}
+
+#savoir:hover {
+  transition-delay: 0.2s;
+  background-color: #EC407A;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.know{
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #2E006C;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.taxi li{
+  list-style: none;
+
+}
+.taxi ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 50px;
+  margin-left: 80px;
+  margin-right: 70px;
+}
+
+#menubis {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: grey;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 15;
+}
+
+@media screen and (max-width:750px) {
+
+ #menu {
+   flex-direction: column;
+ }
+
+ p {
+   text-align: left;
+   margin-left: 0;
+   margin-right: 0;
+   padding: 10px;
+ }
+
+ .taxi ul {
+   flex-direction: column;
+ }
+
+ #menubis {
+   flex-wrap: wrap;
+   justify-content:space-around;
+   margin-left: 0px;
+   margin-right: 0px;
+ }
+
+ .taxi ul {
+   margin-left: 0;
+   margin-right: 0;
+ }
+}
